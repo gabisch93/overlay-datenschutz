@@ -13,7 +13,7 @@
     body {
       margin: 0;
       padding: 0;
-      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+      background: linear-gradient(to bottom right, #fefae0, #e9edc9);
       font-family: 'Inter', sans-serif;
       color: #2c3e50;
       display: flex;
@@ -23,41 +23,54 @@
     }
 
     .container {
-      background-color: #ffffff;
+      background-color: #fdfdf8;
       padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
-      max-width: 720px;
+      border-radius: 16px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      max-width: 740px;
       width: 90%;
-      animation: fadeIn 1s ease-out;
+      animation: fadeIn 1.2s ease-out;
     }
 
     h1 {
-      color: #0077b6;
-      font-size: 2rem;
+      color: #386641;
+      font-size: 2.4rem;
       margin-bottom: 1rem;
-      border-bottom: 2px solid #caf0f8;
+      border-bottom: 2px solid #a7c957;
       padding-bottom: 0.5rem;
+      animation: blink 3s infinite ease-in-out;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.6; }
     }
 
     p {
-      font-size: 1.1rem;
-      line-height: 1.6;
-      margin-bottom: 1.2rem;
+      font-size: 1.15rem;
+      line-height: 1.7;
+      margin-bottom: 1.3rem;
     }
 
     strong {
-      color: #0077b6;
+      color: #6a994e;
     }
 
     a {
-      color: #0077b6;
+      color: #386641;
       text-decoration: none;
       font-weight: 600;
+      transition: all 0.3s ease;
     }
 
     a:hover {
       text-decoration: underline;
+      color: #1a4d2e;
+    }
+
+    .github-link::before {
+      content: '🔗 ';
+      margin-right: 4px;
     }
 
     footer {
@@ -65,10 +78,13 @@
       font-size: 0.9rem;
       color: #6c757d;
       text-align: center;
+      border-top: 1px solid #ddd;
+      padding-top: 1rem;
+      opacity: 0.8;
     }
 
     @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(10px); }
+      from { opacity: 0; transform: translateY(20px); }
       to { opacity: 1; transform: translateY(0); }
     }
   </style>
@@ -83,10 +99,10 @@
 
     <p>Es werden <strong>keine Daten an Dritte verkauft</strong> oder zu Analyse- oder Werbezwecken weitergegeben.</p>
 
-    <p>Bei Fragen oder Anliegen erreichen Sie uns über <a href="https://github.com/gabisch93" target="_blank">GitHub</a>.</p>
+    <p>Bei Fragen oder Anliegen erreichen Sie uns über <a class="github-link" href="https://github.com/gabisch93" target="_blank">GitHub</a>.</p>
 
     <footer>
-      © 2025 gabisch93 – Bereitgestellt mit ❤️ über GitHub Pages.
+      © 2025 gabisch93 – Bereitgestellt mit ☀️ über GitHub Pages.
     </footer>
   </div>
 </body>
