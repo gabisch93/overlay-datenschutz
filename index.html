@@ -4,33 +4,56 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Datenschutzerklärung</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
-      color: #333;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 20px;
-      line-height: 1.6;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      background: #fff;
-      border-radius: 8px;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to bottom right, #e0f7fa, #ffffff);
+      font-family: 'Inter', sans-serif;
+      color: #2c3e50;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      max-width: 720px;
+      width: 90%;
+      animation: fadeIn 1s ease-out;
     }
 
     h1 {
-      color: #0066cc;
-      font-size: 1.8em;
-      margin-bottom: 20px;
+      color: #0077b6;
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      border-bottom: 2px solid #caf0f8;
+      padding-bottom: 0.5rem;
     }
 
     p {
-      margin-bottom: 1em;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
+    }
+
+    strong {
+      color: #0077b6;
     }
 
     a {
-      color: #0066cc;
+      color: #0077b6;
       text-decoration: none;
+      font-weight: 600;
     }
 
     a:hover {
@@ -38,27 +61,33 @@
     }
 
     footer {
-      margin-top: 40px;
-      font-size: 0.9em;
-      color: #777;
+      margin-top: 2rem;
+      font-size: 0.9rem;
+      color: #6c757d;
       text-align: center;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(10px); }
+      to { opacity: 1; transform: translateY(0); }
     }
   </style>
 </head>
 <body>
-  <h1>Datenschutzerklärung</h1>
+  <div class="container">
+    <h1>Datenschutzerklärung</h1>
 
-  <p>Diese Browser-Erweiterung speichert oder überträgt <strong>keine personenbezogenen Daten</strong>.</p>
+    <p>Diese Browser-Erweiterung speichert oder überträgt <strong>keine personenbezogenen Daten</strong>.</p>
 
-  <p>Alle Verarbeitungsvorgänge erfolgen <strong>ausschließlich lokal im Browser</strong> des Nutzers.</p>
+    <p>Alle Verarbeitungsvorgänge erfolgen <strong>ausschließlich lokal im Browser</strong> des Nutzers.</p>
 
-  <p>Es werden <strong>keine Daten an Dritte verkauft</strong> oder zu Analyse- oder Werbezwecken weitergegeben.</p>
+    <p>Es werden <strong>keine Daten an Dritte verkauft</strong> oder zu Analyse- oder Werbezwecken weitergegeben.</p>
 
-  <p>Bei Fragen kontaktieren Sie uns bitte über <a href="https://github.com/gabisch93" target="_blank">GitHub</a>.</p>
+    <p>Bei Fragen oder Anliegen erreichen Sie uns über <a href="https://github.com/gabisch93" target="_blank">GitHub</a>.</p>
 
-  <footer>
-    © 2025 gabisch93 – Diese Seite wurde mit GitHub Pages veröffentlicht.
-  </footer>
+    <footer>
+      © 2025 gabisch93 – Bereitgestellt mit ❤️ über GitHub Pages.
+    </footer>
+  </div>
 </body>
 </html>
-
